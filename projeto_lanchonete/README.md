@@ -2,7 +2,7 @@
 
 Implementação das Histórias de Usuário 01 a 14 (cadastro/login de cliente,
 atendente e administrador, CRUD de produtos, e pedidos com regras de
-negócio) sobre a base de código enviada anteriormente.
+negócio).
 
 ## Estrutura
 
