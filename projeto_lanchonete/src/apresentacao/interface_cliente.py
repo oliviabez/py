@@ -97,14 +97,14 @@ class TelaClienteView:
         botoes_container = tk.Frame(self.area_trabalho, bg=COR_FUNDO_INTERNO)
         botoes_container.pack(fill="x", pady=10)
         
-        lbl_pag = tk.Label(botoes_container, text="Forma de Pagamento:", font=("Arial", 10, "bold"), bg=COR_FUNDO_INTERNO, fg="#FFFFFF")
+        lbl_pag = tk.Label(botoes_container, text="Forma de Pagamento:", font=("Arial", 10, "bold"), bg=COR_VERMELHO_BK, fg="#FFFFFF")
         lbl_pag.pack(side="right", padx=(10, 5))
         
         self.cb_pagamento = ttk.Combobox(botoes_container, values=["Dinheiro", "Cartão de Crédito", "Cartão de Débito", "Pix"], state="readonly", width=15, font=("Arial", 10))
         self.cb_pagamento.set("Pix")
         self.cb_pagamento.pack(side="right", padx=5)
 
-        lbl_qtd = tk.Label(botoes_container, text="Qtd:", font=("Arial", 10, "bold"), bg=COR_FUNDO_INTERNO, fg="#FFFFFF")
+        lbl_qtd = tk.Label(botoes_container, text="Qtd:", font=("Arial", 10, "bold"), bg=COR_AMARELO_BK, fg="#FFFFFF")
         lbl_qtd.pack(side="right", padx=(15, 5))
         
         self.sp_quantidade = tk.Spinbox(botoes_container, from_=1, to=5, width=5, state="readonly", font=("Arial", 10))
@@ -268,13 +268,13 @@ class TelaClienteView:
 
         frame_q = tk.Frame(janela_edicao, bg=COR_FUNDO_INTERNO)
         frame_q.pack(fill="x", padx=20, pady=5)
-        tk.Label(frame_q, text="Nova Quantidade:", font=("Arial", 10), bg=COR_FUNDO_INTERNO, fg="#FFFFFF").pack(side="left")
+        tk.Label(frame_q, text="Nova Quantidade:", font=("Arial", 10), bg=COR_VERMELHO_BK, fg="#FFFFFF").pack(side="left")
         sp_nova_qtd = tk.Spinbox(frame_q, from_=1, to=5, width=5, state="readonly")
         sp_nova_qtd.pack(side="right")
 
         frame_p = tk.Frame(janela_edicao, bg=COR_FUNDO_INTERNO)
         frame_p.pack(fill="x", padx=20, pady=5)
-        tk.Label(frame_p, text="Forma de Pagamento:", font=("Arial", 10), bg=COR_FUNDO_INTERNO, fg="#FFFFFF").pack(side="left")
+        tk.Label(frame_p, text="Forma de Pagamento:", font=("Arial", 10), bg=COR_VERMELHO_BK, fg="#FFFFFF").pack(side="left")
         cb_novo_pag = ttk.Combobox(frame_p, values=["Dinheiro", "Cartão de Crédito", "Cartão de Débito", "Pix"], state="readonly", width=15)
         cb_novo_pag.set("Pix")
         cb_novo_pag.pack(side="right")

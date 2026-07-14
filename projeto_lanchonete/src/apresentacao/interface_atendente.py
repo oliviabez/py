@@ -118,7 +118,7 @@ class TelaAtendenteView:
         frame_acoes = tk.Frame(self.area_trabalho, bg=COR_FUNDO_INTERNO)
         frame_acoes.pack(fill="x", pady=15)
         
-        tk.Label(frame_acoes, text="Alterar Status:", font=("Arial", 11, "bold"), bg=COR_FUNDO_INTERNO, fg="#FFFFFF").pack(side="left", padx=(0, 10))
+        tk.Label(frame_acoes, text="Alterar Status:", font=("Arial", 11, "bold"), bg=COR_HEADER, fg="#FFFFFF").pack(side="left", padx=(0, 10))
         
         self.cb_status = ttk.Combobox(frame_acoes, values=[
             "Pedido recebido com sucesso", 
