@@ -16,7 +16,7 @@ class ConexaoSingleton:
                 password='olilinda',
                 database='lanchonete_db',
                 cursorclass=pymysql.cursors.DictCursor,  # já devolve dicts direto
-                autocommit=False,
+                autocommit=True,
             )
 
         return cls._conexao
